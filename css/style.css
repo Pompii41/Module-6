@@ -4,6 +4,23 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-style {
+  font-size: 30px;
+  font-family: 'Montserrat',
+    sans-serif;
+  color: #95e1d3;
+  font-weight: bold;
+
+  line-height: 1.2;
+
+}
+
 .header-box {
   display: flex;
 }
@@ -22,7 +39,11 @@
 .main-content {
   margin: auto;
   width: 1200px;
-  padding: 120px 0 105px 0;
+  padding: 120px 0 85px 0;
+}
+
+.content-service {
+  margin-bottom: 105px;
 }
 
 .list-navigation-item {
@@ -39,7 +60,7 @@
   width: 50px;
   border-bottom: 3px solid rgb(243, 129, 129);
 
-  transition-duration: .200s;
+  transition: linear 220ms;
 }
 
 .list-navigation-item-link {
@@ -186,29 +207,181 @@
 }
 
 /* section2 */
+.image-box {
+  position: relative;
+}
+
+.image-box:hover {
+
+  transform: translate(-10px, -10px);
+}
+
+.image-box:hover .overlay {
+  display: block;
+  transition: linear 220ms;
+}
+
 
 
 .box-contacts {
   display: flex;
-  flex-basis: 1210px;
-  justify-content: center;
+  max-width: 1210px;
+
   margin-top: 85px;
+  justify-content: center;
 }
 
-.contacts-list-item {
+.contacts-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background-image: linear-gradient(90deg, rgb(252, 227, 138, 0.9) 0%, rgb(243, 129, 129, 0.9) 100%);
+  box-shadow: 10px 10px rgb(149, 225, 211);
   width: 380px;
   height: 470px;
 }
 
-.contacts-list-item-grafic {
-  background-image: url(../img/image/1.png);
+.overlay-list {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.overlay-list-item-link {
+  width: 55px;
+  height: 55px;
+  background-color: rgb(252, 227, 138);
+  cursor: pointer;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.overlay-list-item-link:hover {
+
+  background-color: #95e1d3;
+  transition: linear 220ms;
+}
+
+.overlay-list-item-link-facebook {
+  background-image: url(../img/icon-social/facebook.png);
+}
+
+.overlay-list-item-link-twitter {
+  background-image: url(../img/icon-social/twitter.png);
+}
+
+.overlay-list-item-link-pinterest {
+  background-image: url(../img/icon-social/pinterest.png);
+}
+
+.overlay-list-item-link-instagram {
+  background-image: url(../img/icon-social/instagram.png);
+}
+
+.name {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  font-family: 'Montserrat',
+    sans-serif;
+  margin: 30px 0px 18px 0px;
+}
+
+.position {
+  font-size: 15px;
+  font-family: 'Roboto',
+    sans-serif;
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
 
 }
 
-.contacts-list-item-design {
-  background-image: url(../img/image/2.png);
+footer {
+
+  align-content: center;
 }
 
-.contacts-list-item-developer {
-  background-image: url(../img/image/3.png);
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid rgb(229, 229, 229);
+  padding-top: 25px;
+  align-items: center;
+  padding-bottom: 25px;
+
+}
+
+.text-bottom {
+  font-size: 14px;
+  font-family: 'Montserrat',
+    sans-serif;
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+}
+
+.footer-content a:hover {
+  text-shadow: 0 0 4px #f38181;
+  transition: all 0.3s ease;
+}
+
+.link-bottom {
+  color: #f38181;
+}
+
+.Subscribe {
+  background-color: rgb(149, 225, 211);
+  width: 150px;
+  height: 40px;
+  color: white;
+  font-family: 'Montserrat',
+    sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.registration {
+  display: flex;
+}
+
+.input-bottom {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(231, 231, 231);
+  background-color: rgb(255, 255, 255);
+  width: 234px;
+  height: 40px;
+
+}
+
+.input-bottom::placeholder {
+
+  font-size: 15px;
+  font-family: 'Roboto',
+    sans-serif;
+  color: rgb(204, 204, 204);
+  font-style: italic;
+  line-height: 1.6;
 }
