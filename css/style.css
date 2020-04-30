@@ -21,15 +21,14 @@ img {
 
 }
 
-.header-box {
-  display: flex;
-}
+
 
 .list-navigation {
   display: flex;
 }
 
 .header-box {
+  display: flex;
   justify-content: space-between;
   width: 1200px;
   align-items: center;
@@ -66,13 +65,21 @@ img {
 .list-navigation-item-link {
   color: #45b6a1;
   padding-bottom: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-family: 'Montserrat',
+    sans-serif;
 }
 
-.icon {
-  flex-basis: 80px;
-  background-repeat: no-repeat;
-  transform: translate(50%, 10%);
 
+
+.icon {
+
+  background-repeat: no-repeat;
+
+  top: 0;
+  left: 0;
 }
 
 
@@ -120,7 +127,7 @@ img {
 }
 
 .title-services-shrift {
-  font-size: 24px;
+  font-size: 18px;
   font-family: 'Kaushan Script',
     cursive;
   color: rgb(51, 51, 51);
@@ -173,6 +180,7 @@ img {
 
 .services {
   flex-basis: 300px;
+  padding-left: 28px;
 }
 
 .subtitle {
@@ -242,9 +250,12 @@ img {
   transform: translate(-50%, -50%);
   display: none;
   background-image: linear-gradient(90deg, rgb(252, 227, 138, 0.9) 0%, rgb(243, 129, 129, 0.9) 100%);
+  width: 100%;
+  height: 100%;
+}
+
+.image-box:hover {
   box-shadow: 10px 10px rgb(149, 225, 211);
-  width: 380px;
-  height: 470px;
 }
 
 .overlay-list {
